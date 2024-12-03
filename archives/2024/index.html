@@ -399,6 +399,31 @@
                 <main class="main index-page">
             
         <article class="index-post">
+            <a class="abstract-title" href="/2024/12/03/2024%E5%B9%B4%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87blog/">
+                <span class="abstract-title-text">[Untitled Post]</span>
+            </a>
+            <div class="abstract-content">
+                
+title：“2024年的第一篇blog”date： 2024-03-31 13:09:27tags：规划复盘2024大一下期，说实话学校的功课压力有点大，但是有感觉自己还学的远远不够，之前也是有小小的b溃过，光是web方面就够我担心的，
+大一下期目前已经过了1&#x2F;4了，已经把是十大楼洞的原理，基本应对方法已经情况学的大差不差了，但是有些漏洞学的很草率，例如sql注入，ssti，ssrf
+所以这个学期务必要将这些内容补齐，
+规划说一年的规划还是太远了，可以先说一下我的网安小目标，
+1、将上面所说的漏洞的不全给补齐，
+2、刷够500道web题（30&#x2F;500）
+3、学习n...
+            </div>
+            <!-- read more -->
+            <div class="abstract-post-meta">
+                <!-- date -->
+                <div class="abstract-date" title="Last updated: 2024/03/31">
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2024/12/03</span>
+                </div>
+                <!-- tags -->
+            </div>
+        </article>
+        <div class="index-post-divider"></div>
+            
+        <article class="index-post">
             <a class="abstract-title" href="/2024/12/03/hello-world/">
                 <span class="abstract-title-text">Hello World</span>
             </a>
@@ -416,6 +441,62 @@ Run server1$ hexo ...
                     <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2024/12/03</span>
                 </div>
                 <!-- tags -->
+            </div>
+        </article>
+        <div class="index-post-divider"></div>
+            
+        <article class="index-post">
+            <a class="abstract-title" href="/2024/07/15/PHP%E7%9A%84%E5%A4%9A%E7%BA%A7%E7%BC%93%E5%86%B2%E6%9C%BA%E5%88%B6/">
+                <span class="abstract-title-text">PHP的多级缓冲机制</span>
+            </a>
+            <div class="abstract-content">
+                在 PHP 中，缓冲区（output buffering）是一种将输出数据暂存到内存中的技术。 它可以将脚本生成的所有输出数据保存在缓冲区中，直到缓冲区被显式地清空或者达到一定的大小限制时才会输出到客户端。
+
+ob_clean — 清空（擦掉）输出缓冲区
+ob_end_clean — 清空（擦除）缓冲区并关闭输出缓冲
+ob_end_flush — 冲刷出（送出）输出缓冲区内容并关闭缓冲
+ob_flush — 冲刷出（送出）输出缓冲区中的内容
+ob_start — 打开输出控制缓冲
+
+我们来段代码测试以下：
+12345678910&lt;?phpob_start(); echo &#x27...
+            </div>
+            <!-- read more -->
+            <div class="abstract-post-meta">
+                <!-- date -->
+                <div class="abstract-date" title="Last updated: 2024/07/15">
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2024/07/15</span>
+                </div>
+                <!-- tags -->
+                    <div class="abstract-tags" >
+        <a class="post-tag" href="javascript:void(0);" data-tags="php">php</a>
+</div>
+
+            </div>
+        </article>
+        <div class="index-post-divider"></div>
+            
+        <article class="index-post">
+            <a class="abstract-title" href="/2024/04/07/%E8%AF%A6%E8%B0%88PHP%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6/">
+                <span class="abstract-title-text">详谈PHP垃圾回收机制</span>
+            </a>
+            <div class="abstract-content">
+                一、PHP中GC介绍Gc，全称Garbage collection，即垃圾回收机制在PHP中，是使用&#x3D;&#x3D;引用计数&#x3D;&#x3D;和&#x3D;&#x3D;回收周期&#x3D;&#x3D;来自动管理内存对象的，当一个对象被设置为NULL，或者没有任何指针指向时，他就会变成垃圾，被GC机制回收掉，这里其实就可以理解为当一个对象没有被引用时，也就是基本类型(字符串，整形等等），被引用也就是一个对象(Object），在这可以理解为一个对象没有被引用时就会被GC机制回收先引入一个函数xdebug_debug_zval，该函数用以查看变量容器的内容：
+123&lt;?ph...
+            </div>
+            <!-- read more -->
+            <div class="abstract-post-meta">
+                <!-- date -->
+                <div class="abstract-date" title="Last updated: 2024/04/28">
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2024/04/07</span>
+                </div>
+                <!-- tags -->
+                    <div class="abstract-tags" >
+        <a class="post-tag" href="javascript:void(0);" data-tags="PHP">PHP</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags="反序列化">反序列化</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags="GC">GC</a>
+</div>
+
             </div>
         </article>
         <div class="index-post-divider"></div>
@@ -458,9 +539,12 @@ Run server1$ hexo ...
         <div class="sidebar-panel-archives">
     <!-- 在 ejs 中将 archive 按照时间排序 -->
         
+        
+        
+        
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 1
+        Total : 4
         </div>
         <!-- search  -->
     </div>
@@ -471,12 +555,46 @@ Run server1$ hexo ...
             <span class="archive-post-date">12/03</span>
             <a class="archive-post-title" href="/2024/12/03/hello-world/">Hello World</a>
         </li>
+                </ul>
+            <div class="archive-year"> Invalid date </div>
+            <ul class="year-list">
+        <li class="archive-post-item">
+            <span class="archive-post-date">Invalid date</span>
+            <a class="archive-post-title" href="/2024/12/03/2024%E5%B9%B4%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87blog/">[Untitled Post]</a>
+        </li>
+                </ul>
+            <div class="archive-year"> 2024 </div>
+            <ul class="year-list">
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/15</span>
+            <a class="archive-post-title" href="/2024/07/15/PHP%E7%9A%84%E5%A4%9A%E7%BA%A7%E7%BC%93%E5%86%B2%E6%9C%BA%E5%88%B6/">PHP的多级缓冲机制</a>
+        </li>
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/07</span>
+            <a class="archive-post-title" href="/2024/04/07/%E8%AF%A6%E8%B0%88PHP%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6/">详谈PHP垃圾回收机制</a>
+        </li>
             </ul>
     </div>
 </div>
 
         <div class="sidebar-panel-tags">
     <div class="sidebar-tags-name">
+            <span class="sidebar-tag-name" data-tags="php">
+                <span class="iconfont-archer">&#xe606;</span>
+                php
+            </span>
+            <span class="sidebar-tag-name" data-tags="PHP">
+                <span class="iconfont-archer">&#xe606;</span>
+                PHP
+            </span>
+            <span class="sidebar-tag-name" data-tags="反序列化">
+                <span class="iconfont-archer">&#xe606;</span>
+                反序列化
+            </span>
+            <span class="sidebar-tag-name" data-tags="GC">
+                <span class="iconfont-archer">&#xe606;</span>
+                GC
+            </span>
     </div>
     <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
     <div class="tag-load-fail" style="display: none; color: #ccc; font-size: 0.6rem;">
