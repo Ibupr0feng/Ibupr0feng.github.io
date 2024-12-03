@@ -12,7 +12,7 @@
     <meta name="description" content="">
     <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/tags/PHP/index.html">
+<meta property="og:url" content="http://example.com/tags/php/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="John Doe">
@@ -399,24 +399,30 @@
                 <main class="main index-page">
             
         <article class="index-post">
-            <a class="abstract-title" href="/2024/04/07/%E8%AF%A6%E8%B0%88PHP%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6/">
-                <span class="abstract-title-text">详谈PHP垃圾回收机制</span>
+            <a class="abstract-title" href="/2024/07/15/PHP%E7%9A%84%E5%A4%9A%E7%BA%A7%E7%BC%93%E5%86%B2%E6%9C%BA%E5%88%B6/">
+                <span class="abstract-title-text">PHP的多级缓冲机制</span>
             </a>
             <div class="abstract-content">
-                一、PHP中GC介绍Gc，全称Garbage collection，即垃圾回收机制在PHP中，是使用&#x3D;&#x3D;引用计数&#x3D;&#x3D;和&#x3D;&#x3D;回收周期&#x3D;&#x3D;来自动管理内存对象的，当一个对象被设置为NULL，或者没有任何指针指向时，他就会变成垃圾，被GC机制回收掉，这里其实就可以理解为当一个对象没有被引用时，也就是基本类型(字符串，整形等等），被引用也就是一个对象(Object），在这可以理解为一个对象没有被引用时就会被GC机制回收先引入一个函数xdebug_debug_zval，该函数用以查看变量容器的内容：
-123&lt;?ph...
+                在 PHP 中，缓冲区（output buffering）是一种将输出数据暂存到内存中的技术。 它可以将脚本生成的所有输出数据保存在缓冲区中，直到缓冲区被显式地清空或者达到一定的大小限制时才会输出到客户端。
+
+ob_clean — 清空（擦掉）输出缓冲区
+ob_end_clean — 清空（擦除）缓冲区并关闭输出缓冲
+ob_end_flush — 冲刷出（送出）输出缓冲区内容并关闭缓冲
+ob_flush — 冲刷出（送出）输出缓冲区中的内容
+ob_start — 打开输出控制缓冲
+
+我们来段代码测试以下：
+12345678910&lt;?phpob_start(); echo &#x27...
             </div>
             <!-- read more -->
             <div class="abstract-post-meta">
                 <!-- date -->
-                <div class="abstract-date" title="Last updated: 2024/04/28">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2024/04/07</span>
+                <div class="abstract-date" title="Last updated: 2024/07/15">
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2024/07/15</span>
                 </div>
                 <!-- tags -->
                     <div class="abstract-tags" >
-        <a class="post-tag" href="javascript:void(0);" data-tags="PHP">PHP</a>
-        <a class="post-tag" href="javascript:void(0);" data-tags="反序列化">反序列化</a>
-        <a class="post-tag" href="javascript:void(0);" data-tags="GC">GC</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags="php">php</a>
 </div>
 
             </div>
@@ -464,9 +470,10 @@
         
         
         
+        
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 4
+        Total : 5
         </div>
         <!-- search  -->
     </div>
@@ -494,6 +501,13 @@
         <li class="archive-post-item">
             <span class="archive-post-date">04/07</span>
             <a class="archive-post-title" href="/2024/04/07/%E8%AF%A6%E8%B0%88PHP%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6/">详谈PHP垃圾回收机制</a>
+        </li>
+                </ul>
+            <div class="archive-year"> Invalid date </div>
+            <ul class="year-list">
+        <li class="archive-post-item">
+            <span class="archive-post-date">Invalid date</span>
+            <a class="archive-post-title" href="/2024/12/03/%E6%96%B0%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB%E4%BB%A5%E5%8F%8A%E4%B8%80%E4%BA%9B%E6%83%B3%E8%AF%B4%E7%9A%84%E8%AF%9D/">[Untitled Post]</a>
         </li>
             </ul>
     </div>
@@ -557,6 +571,12 @@
         <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.36/dist/fancybox/fancybox.umd.js" onload="window.Fancybox.bind('[data-fancybox]')" defer></script>
         <!-- algolia -->
         <!-- busuanzi -->
+            <script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+        <!-- async load share.js -->
+        <!-- mermaid -->
+    </body>
+</html>
+      <!-- busuanzi -->
             <script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
         <!-- async load share.js -->
         <!-- mermaid -->
